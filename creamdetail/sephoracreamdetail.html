@@ -5,19 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RoséLuxe</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+
 </head>
 
 <body>
+    <style>
+        .card {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .card-wrapper {
+            margin-top: 15%
+        }
+    </style>
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <h1><a href="./index.html" style="color: #7d3538;">RoséLuxe</a></h1>
+                <h1><a href="../index.html" style="color: #7d3538;">RoséLuxe</a></h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +37,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link " aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Link</a>
@@ -46,202 +57,101 @@
                             <a class="nav-link " href="#" aria-disabled="true">Disabled</a>
                         </li>
                     </ul>
-                    <!-- <form class="d-flex" role="search">
+                    <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                         <button class="btn btn-light" type="submit">Search</button>
-                    </form> -->
-                    <div class="loginregisterbuton">
-                        <button onclick="window.location.href='./lipscategory.html'" class="buton1" style="width: 90px; height: 35px;border-radius: 15px;border:1px solid #c2777c;">Sign In</button>
-                        <button onclick="window.location.href='./lipscategory.html'" class="buton2" style="width: 90px; height: 35px;border-radius: 15px;">Sign Up</button>
-
-                    </div>
+                    </form>
                 </div>
             </div>
         </nav>
     </header>
-
-    <section class="section1">
-        <div class="backgroundText">
-            <h2>Welcome to RoséLuxe</h2>
-            <button>Discover</button>
-
-        </div>
-    </section>
+    <div class="productdetails">
+    </div>
 
 
-    <div class="category-section" style="margin-top: 10%;">
-        <div style="margin-left: 10%;">
-            <h1 style="color: #212529; font-weight: 700;color: #b25f65;">CATEGORY</h1>
-        </div>
-        <div class="container category-cards">
-            <div class="category-card">
-                <div class="category-image">
-                    <img src="./images/logoCards/download (1).jpeg" alt="Category 1">
+    <div class="card-wrapper">
+        <div class="card">
+
+            <div class="product-imgs">
+                <div class="img-display">
+                    <div class="img-showcase">
+                        <img src="../images/Products/creamsproduct/sephoracream/s2818714-main-zoom.webp" alt="shoe image">
+                        <img src="../images/Products/creamsproduct/sephoracream/s2818714-av-03-zoom.webp" alt="shoe image">
+                        <img src="../images/Products/creamsproduct/sephoracream/s2818714-av-04-zoom.jpg" alt="shoe image">
+                        <img src="../images/Products/creamsproduct/sephoracream/s2818714-av-05-zoom.webp" alt="shoe image">
+                    </div>
                 </div>
-                <a href="./lipscategory.html" class="category-name">Lips</a>
+                <div class="img-select">
+                    <div class="img-item">
+                        <a href="#" data-id="1">
+                            <img src="../images/Products/creamsproduct/sephoracream/s2818714-main-zoom.webp" alt="shoe image">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="2">
+                            <img src="../images/Products/creamsproduct/sephoracream/s2818714-av-03-zoom.webp" alt="shoe image">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="3">
+                            <img src="../images/Products/creamsproduct/sephoracream/s2818714-av-04-zoom.jpg" alt="shoe image">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="4">
+                            <img src="../images/Products/creamsproduct/sephoracream/s2818714-av-05-zoom.webp" alt="shoe image">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="category-card">
-                <div class="category-image">
-                    <img src="./images/logoCards/caf1275bc202c1dbd8d9339e1424d3fd.jpg" alt="Category 2">
+
+            <div class="product-content">
+                <h2 class="product-title">Sephora</h2>
+                <a href="#" class="product-link">visit RoséLuxe</a>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.7(21)</span>
                 </div>
-                <a href="./powderscategory.html" class="category-name">Powders</a>
-            </div>
-            <div class="category-card">
-                <div class="category-image">
-                    <img src="./images/logoCards/download (3).jpeg" alt="Category 3">
+
+                <div class="product-price">
+                    <p class="last-price">Old Price: <span>$57.00</span></p>
+                    <p class="new-price">New Price: <span>$49.00 (5%)</span></p>
                 </div>
-                <a href="./blushescategory.html" class="category-name">Blush</a>
-            </div>
-            <div class="category-card">
-                <div class="category-image">
-                    <img src="./images/logoCards/download (4).jpeg" alt="Category 4">
+
+                <div class="product-detail">
+                    <h2>about this item: </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur
+                        placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius.
+                        Dignissimos, labore suscipit. Unde.</p>
+                    <ul>
+                        <li>Color: <span>All</span></li>
+                        <li>Available: <span>in stock</span></li>
+                        <li>Category: <span>Cosmetic</span></li>
+                        <li>Shipping Area: <span>All over the world</span></li>
+                        <li>Shipping Fee: <span>Free</span></li>
+                    </ul>
                 </div>
-                <a href="./creamscategory.html" class="category-name">Creams</a>
-            </div>
-            <div class="category-card">
-                <div class="category-image">
-                    <img src="./images/logoCards/download (5).jpeg" alt="Category 5">
+
+                <div class="purchase-info">
+                    <input type="number" min="0" value="1">
+                    <button type="button" class="btn">
+                        Add to Cart <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <button type="button" class="btn">Compare</button>
                 </div>
-                <a href="./brushescategory.html" class="category-name">Brushes</a>
-            </div>
-            <div class="category-card">
-                <div class="category-image">
-                    <img src="./images/logoCards/download (6).jpeg" alt="Category 6">
-                </div>
-                <a href="./skincarecategory.html" class="category-name">Skin Care</a>
+
+
             </div>
         </div>
     </div>
 
 
-
-    <div class="product-section" style="margin-top: 10%;">
-        <h1 style="margin-left: 10%;font-weight: 700;color: #b25f65;">NEW PRODUCTS</h1>
-        <div class="container product-cards">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./images/Products/blushproduct/bobbibrownblush/s2873834-main-zoom.webp" alt="Product 1">
-                </div>
-                <a href="./blushdetail/bobbibrowndetail.html" class="product-name">Bobbi Brown Blush</a>
-                <p class="product-price">$36</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./images/Products/lipproduct/diorgloss/s2635746-main-zoom.webp" alt="Product 2">
-                </div>
-                <a href="./lipdetail/diorglossdetail.html" class="product-name">Dior Gloss</a>
-                <p class="product-price">$42</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./images/Products/powderproduct/hudapowder/s2114072-main-zoom.webp" alt="Product 3">
-                </div>
-                <a href="./powderdetail/hudapowderdetail.html" class="product-name">HUDA BEAUTY</a>
-                <p class="product-price">$39</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./images/Products/brushproduct/sephorabrush/s2866713-main-zoom.webp" alt="Product 4">
-                </div>
-                <a href="./brushdetail/sephorabrushdetail.html" class="product-name">Sephora Brush</a>
-                <p class="product-price">$36</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./images/Products/skincareproduct/milkskincare/s2912608-main-zoom.webp" alt="Product 1">
-                </div>
-                <a href="./skincaredetail/milkskincaredetail.html" class="product-name">Milk Skin Care</a>
-                <p class="product-price">$49</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./images/Products/blushproduct/diorblush/s2864817-main-zoom.webp" alt="Product 2">
-                </div>
-                <a href="./blushdetail/diorblushdetail.html" class="product-name">Dior Blush</a>
-                <p class="product-price">$42</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./images/Products/creamsproduct/dermalogicacream/s2736767-main-zoom.webp" alt="Product 3">
-                </div>
-                <a href="./creamdetail/dermologicacreamdetail.html" class="product-name">Dermalogica Cream</a>
-                <p class="product-price">$69</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./images/Products/lipproduct/fentylip/s2327245-main-zoom.webp" alt="Product 4">
-                </div>
-                <a href="./lipdetail/fentyglossdetail.html" class="product-name">Fenty Beauty Gloss</a>
-                <p class="product-price">$23</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./images/Products/blushproduct/rarebronzer/s2828705-main-zoom.webp" alt="Product 1">
-                </div>
-                <a href="./blushdetail/rareblushdetail.html" class="product-name">Rare Beauty Bronzer</a>
-                <p class="product-price">$28</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./images/Products/powderproduct/yslpowder/s2905594-main-zoom.webp" alt="Product 2">
-                </div>
-                <a href="./powderdetail/yslpowderdetail.html" class="product-name">YSL Powder</a>
-                <p class="product-price">$65</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./images/Products/creamsproduct/bobbibrowncream/s2073195-main-zoom.webp" alt="Product 3">
-                </div>
-                <a href="./creamdetail/bobbibrowncreamdetail.html" class="product-name">Bobbi Brown Cream</a>
-                <p class="product-price">$69</p>
-            </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="./images/Products/lipproduct/yslstick/s2900371-main-zoom.webp" alt="Product 4">
-                </div>
-                <a href="./lipdetail/yslstickdetail.html" class="product-name">YSL Stick</a>
-                <p class="product-price">$43</p>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="cntct_box_f92" style="margin-top: 7%;">
-        <h2 class="cntct_title_f92" style="color: #b25f65;font-weight: 800;font-size:35px;">CONTACT US</h2>
-        <form class="cntct_form_f92">
-            <div class="cntct_row_f92">
-                <input type="text" placeholder="First Name" class="cntct_inp_f92" />
-                <input type="text" placeholder="Last Name" class="cntct_inp_f92" />
-            </div>
-            <div class="cntct_row_f92">
-                <input type="email" placeholder="Email" class="cntct_inp_f92" />
-                <input type="text" placeholder="Phone" class="cntct_inp_f92" />
-            </div>
-            <textarea placeholder="Your message..." class="cntct_text_f92"></textarea>
-            <button type="submit" class="cntct_btn_f92">Send Message</button>
-        </form>
-    </div>
-
-    <div class="about-div">
-        <h2>ABOUT</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <h3>OUR STORY</h3>
-                <p style="margin-top: 10%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure accusamus
-                    veritatis ipsam culpa. Delectus, error. Fugit ipsum animi nulla unde libero ad laudantium cum dolore
-                    exercitationem maxime itaque, impedit debitis voluptatum nemo. Illo hic ducimus alias, quisquam
-                    velit quaerat earum, animi eius cupiditate repudiandae blanditiis, pariatur autem nobis beatae?
-                    Sapiente qui sequi ex minima iure quis quas corporis necessitatibus mollitia atque libero modi
-                    aliquam, saepe fugiat veritatis assumenda! Deleniti, itaque.</p>
-            </div>
-            <div class="about-image">
-                <img src="./images/sale/Instagram Post - Exclusive RoséLuxe Discounts Await!.png" alt="About Image">
-            </div>
-        </div>
-    </div>
-
-
-    <footer>
+ <footer style="margin-top: 15%;">
         <div class="pg-footer">
             <footer class="footer">
                 <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100"
@@ -392,18 +302,10 @@
 
 
 
-
-
-
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <script src="./app.js"></script>
+    <script src="../app.js"></script>
 
 
 
