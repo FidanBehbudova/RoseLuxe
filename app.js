@@ -1,5 +1,7 @@
 const header = document.querySelector('header');
 
+
+
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         header.classList.add('scrolled');
@@ -7,6 +9,8 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
 });
+
+
 
 
 const imgs = document.querySelectorAll('.img-select a');
@@ -20,6 +24,7 @@ imgBtns.forEach((imgItem) => {
         slideImage();
     });
 });
+
 
 function slideImage(){
     const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
